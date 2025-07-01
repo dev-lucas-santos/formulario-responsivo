@@ -1,0 +1,53 @@
+html {
+    background-image: url(src/imagens/azul.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+form {
+    border: solid 2px;
+    border-radius: 40px;
+    padding: 70px;
+    color: rgba(243, 243, 246, 0.849);
+   box-shadow: rgba(248, 246, 246, 0.3) 0px 19px 38px, rgba(244, 2, 2, 0.22) 0px 15px 12px;
+   backdrop-filter: blur(10px);
+}
+
+
+@font-face {
+    font-family: 'milky';
+    src: url('./src/fontes/SNOW\ BLUE.otf'),
+    url('./src/fontes/SNOW\ BLUE.ttf')
+   
+}
+
+h1 {
+    font-family: 'milky';
+    font-weight:700;
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin-bottom: 0%;
+    
+  font-size: 5em; 
+  color: #fbf8f8; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  text-shadow:rgba(247, 243, 243, 0.381) 0px 19px 38px, rgba(255, 5, 5, 0.22) 0px 15px 12px;
+} 
+.subtitulo {
+  color: #fbf8f8;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50px;
+    margin-top: 0px;
+}
