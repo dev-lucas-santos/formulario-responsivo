@@ -1,53 +1,101 @@
-html {
-    background-image: url(src/imagens/azul.png);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
+*
+{
+     margin:0;
+    padding: 0;
 }
+
+
+main {
+display: flex;
+align-items: center;
+justify-content: center;
+background: url(src/imagens/azul.png);
+background-size: cover;
+min-height: 100vh;
+}
+
 
 form {
-    border: solid 2px;
-    border-radius: 40px;
-    padding: 70px;
-    color: rgba(243, 243, 246, 0.849);
-   box-shadow: rgba(248, 246, 246, 0.3) 0px 19px 38px, rgba(244, 2, 2, 0.22) 0px 15px 12px;
-   backdrop-filter: blur(10px);
+  border: solid 2px;
+  border-radius: 40px;
+  padding: 70px;
+  color: rgba(243, 243, 246, 0.849);
+  box-shadow: rgba(248, 246, 246, 0.3) 0px 19px 38px,
+    rgba(64, 64, 65, 0.879) 0px 15px 12px;
+  backdrop-filter: blur(10px);
+  align-items: center;
+ 
+
 }
 
-
 @font-face {
-    font-family: 'milky';
-    src: url('./src/fontes/SNOW\ BLUE.otf'),
-    url('./src/fontes/SNOW\ BLUE.ttf')
-   
+  font-family: "milky";
+  src: url("./src/fontes/SNOW\ BLUE.otf"), url("./src/fontes/SNOW\ BLUE.ttf");
+}
+
+.logo {
+  font-family: "milky";
+  font-weight: 700;
 }
 
 h1 {
-    font-family: 'milky';
-    font-weight:700;
-}
-.titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px;
-    margin-bottom: 0%;
-    
-  font-size: 5em; 
-  color: #fbf8f8; 
-  font-weight: bold; 
-  text-transform: uppercase; 
-  text-shadow:rgba(247, 243, 243, 0.381) 0px 19px 38px, rgba(255, 5, 5, 0.22) 0px 15px 12px;
-} 
-.subtitulo {
   color: #fbf8f8;
+}
+h1.cadastro {
+    margin-bottom: 25px;
+}
+.subtitulo {
+ 
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+input.enviar {
+    margin-top: 50px;
     align-items: center;
     justify-content: center;
-    position: relative;
-    height: 50px;
-    margin-top: 0px;
+    margin-left: 170px;
+    text-transform: uppercase;
+}
+ h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-shadow: rgba(64, 64, 65, 0.879);
+ }
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(64, 64, 65, 0.879);
+    height: 8vh;
+ padding: 10px;
+
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
 }
